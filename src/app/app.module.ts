@@ -8,10 +8,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
 
-import { registerLocaleData } from '@angular/common';
-import localePt from '@angular/common/locales/pt';
-registerLocaleData(localePt, 'pt');
-
 @NgModule({
   declarations: [DatepickerDateClassExample],
   imports: [
@@ -23,7 +19,7 @@ registerLocaleData(localePt, 'pt');
     MaterialExampleModule,
     ReactiveFormsModule,
   ],
-  providers: [{ provide: LOCALE_ID, useValue: 'pt' }],
+  providers: [{ provide: LOCALE_ID, useValue: 'en-nz' }],
   bootstrap: [DatepickerDateClassExample],
 })
 export class AppModule {}
